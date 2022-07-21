@@ -1,0 +1,217 @@
+/* width */
+@import url("https://rsms.me/inter/inter.css");
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Mono", sans-serif;
+  overflow: hidden;
+  font-weight: bolder;
+}
+
+body {
+  /* BACKGROUND GRADIENT */
+  background: #d2f3e2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faffd1,
+    #d2f3e2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #d2f3e2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  flex-direction: column;
+}
+
+#title {
+  font-family: "inter", Helvetica, sans-serif;
+  background: -webkit-linear-gradient(rgb(231, 231, 234), rgb(86, 125, 86));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5em;
+  margin: 0.1em;
+}
+
+.main-container {
+  width: 50%;
+  height: 80vh;
+  border-radius: 25px;
+  background-color: rgba(128, 128, 128, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  gap: 1em;
+}
+
+#taskInput {
+  border: 0;
+  border-radius: 20px;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 1em;
+  background-color: rgba(128, 128, 128, 0.2);
+  color: rgba(255, 255, 255, 1);
+}
+
+#taskInput::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+#taskInput:focus {
+  outline: none !important;
+  border: 1px solid #7d9d9c4a;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+#input-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#addButton {
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.9);
+  border-radius: 60px;
+  height: 100%;
+  width: 10%;
+  font-size: 3px;
+}
+
+#addButton svg {
+  width: 30px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#addButton:hover {
+  background-color: rgba(128, 128, 128, 1);
+  cursor: pointer;
+}
+
+#selector {
+  display: flex;
+  justify-content: space-evenly;
+  border: 0;
+  border-radius: 20px;
+  width: 93%;
+  height: 60px;
+  text-align: center;
+  font-size: 1em;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.selectButton {
+  font-size: 1em;
+  border: 0;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0);
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: background-color ease-in 0.1s;
+}
+
+.activeButton {
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.finished {
+  display: none;
+}
+
+.removed {
+  display: none;
+}
+
+#planned:hover,
+#finished:hover {
+  background-color: rgba(128, 128, 128, 1);
+}
+
+.sections {
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 20px;
+  height: 80%;
+  width: 93%;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+.sections h1 {
+  text-align: center;
+  opacity: 40%;
+}
+
+.sections h1 svg {
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  min-width: 30%;
+  max-width: 30%;
+  width: 35%;
+  font-family: "Open Sans";
+  font-weight: 100;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  text-align: center;
+  padding: 2%;
+  color: rgb(25, 24, 24);
+  flex: 1;
+}
+
+.card button {
+  background-color: #7d9d9c;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.card button svg {
+  width: 20px;
+  color: white;
+}

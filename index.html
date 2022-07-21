@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyPlans</title>
+</head>
+
+<body>
+    <h1 id="title">plan your day ahead :)</h1>
+    <section class="main-container">
+        <div id="input-container">
+            <input type="text" name="inputBar" id="taskInput" placeholder="Add a task">
+            <button id="addButton">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="selector">
+            <button id="planned" class="selectButton activeButton">Planned </button>
+            <button id="finished" class="selectButton"> Finished </button>
+        </div>
+        <div class="plannedSection sections">
+
+            <!-- <h1>This is where all your planned tasks will go
+                <br>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </h1> -->
+        </div>
+        <div class="finishedSection sections hidden">
+
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+
+</html>
