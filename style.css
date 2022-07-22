@@ -57,12 +57,12 @@ body {
   background: -webkit-linear-gradient(rgb(231, 231, 234), rgb(86, 125, 86));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5em;
+  font-size: 4em;
   margin: 0.1em;
 }
 
 .main-container {
-  width: 50%;
+  width: 80vh;
   height: 80vh;
   border-radius: 25px;
   background-color: rgba(128, 128, 128, 0.2);
@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2%;
+  padding: 2% 0.1%;
   gap: 1em;
 }
 
@@ -209,6 +209,10 @@ body {
   padding: 5px;
   cursor: pointer;
   margin: 2px;
+}
+
+.card button:hover {
+  background-color: #5e9694;
 }
 
 .card button svg {
